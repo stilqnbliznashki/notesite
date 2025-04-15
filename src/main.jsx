@@ -48,7 +48,7 @@ function App() {
 
       <div id="notes-container">
         {notes.map((note) => (
-          <Note key={note.id} note={note} />
+          <Note note={note} />
         ))}
       </div>
     </div>
