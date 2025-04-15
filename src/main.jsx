@@ -25,8 +25,7 @@ function App() {
   function addNote () {
     if (noteText.trim() === '') return;
     const newNote = {
-      id: notes.length,
-      text: noteText,
+      text: noteText
     };
     setNotes([...notes, newNote]);
     setNoteText('');
