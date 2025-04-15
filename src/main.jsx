@@ -22,7 +22,7 @@ function App() {
   const [notes, setNotes] = useState([]);
   const [noteText, setNoteText] = useState('');
 
-  const addNote = () => {
+  function addNote () {
     if (noteText.trim() === '') return;
     const newNote = {
       id: notes.length,
